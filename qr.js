@@ -16,17 +16,17 @@ const MESSAGE = process.env.MESSAGE ||  `
 *SESSION GENERATED SUCCESSFULY* ✅
 
 *Gɪᴠᴇ ᴀ ꜱᴛᴀʀ ᴛᴏ ʀᴇᴘᴏ ꜰᴏʀ ᴄᴏᴜʀᴀɢᴇ* 🌟
-https://github.com/GuhailTechInfo/ULTRA-MD
+https://github.com/MRSHABAN/SHABAN-MD
 
 *Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ ꜰᴏʀ ϙᴜᴇʀʏ* 💭
 https://t.me/GlobalBotInc
-https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07
+https://whatsapp.com/channel/0029VazjYjoDDmFZTZ9Ech3O
 
 
 *Yᴏᴜ-ᴛᴜʙᴇ ᴛᴜᴛᴏʀɪᴀʟꜱ* 🪄 
-https://youtube.com/GlobalTechInfo
+https://youtube.com/@mrshaban3788?si=GYPwbIg4mxUdtsou
 
-*ULTRA-MD--WHATTSAPP-BOT* 🥀
+*SHABAN-MD--WHATTSAPP-BOT* 🥀
 `
 
 
@@ -63,7 +63,7 @@ if (fs.existsSync('./auth_info_baileys')) {
 
 
 
-  const { default: SuhailWASocket, useMultiFileAuthState, Browsers, delay,DisconnectReason, makeInMemoryStore, } = require("@whiskeysockets/baileys");
+  const { default: ShabanWASocket, useMultiFileAuthState, Browsers, delay,DisconnectReason, makeInMemoryStore, } = require("@whiskeysockets/baileys");
 
   const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 
@@ -73,7 +73,7 @@ if (fs.existsSync('./auth_info_baileys')) {
 
     try {
 
-      let Smd =SuhailWASocket({ 
+      let Smd =ShabanWASocket({ 
 
         printQRInTerminal: false,
 
@@ -221,25 +221,25 @@ SESSION-ID ==> ${Scan_Id}
 
               console.log("Connection closed!")
 
-             // SUHAIL().catch(err => console.log(err));
+             // SHABAN().catch(err => console.log(err));
 
             } else if (reason === DisconnectReason.connectionLost) {
 
                 console.log("Connection Lost from Server!")
 
-            //  SUHAIL().catch(err => console.log(err));
+            //  SHABAN().catch(err => console.log(err));
 
             } else if (reason === DisconnectReason.restartRequired) {
 
                 console.log("Restart Required, Restarting...")
 
-              SUHAIL().catch(err => console.log(err));
+              SHABAN().catch(err => console.log(err));
 
             } else if (reason === DisconnectReason.timedOut) {
 
                 console.log("Connection TimedOut!")
 
-             // SUHAIL().catch(err => console.log(err));
+             // SHABAN().catch(err => console.log(err));
 
             }  else {
 
@@ -279,7 +279,7 @@ SESSION-ID ==> ${Scan_Id}
 
   }
 
-  SUHAIL().catch(async(err) => {
+  SHABAN().catch(async(err) => {
 
     console.log(err)
 
@@ -297,7 +297,7 @@ SESSION-ID ==> ${Scan_Id}
 
 });
 
-return await SUHAIL()
+return await SHABAN()
 
 
 
