@@ -8,17 +8,17 @@ const MESSAGE = process.env.MESSAGE || `
 *SESSION GENERATED SUCCESSFULY* ✅
 
 *Gɪᴠᴇ ᴀ ꜱᴛᴀʀ ᴛᴏ ʀᴇᴘᴏ ꜰᴏʀ ᴄᴏᴜʀᴀɢᴇ* 🌟
-https://github.com/GuhailTechInfo/ULTRA-MD
+https://github.com/MRSHABAN/SHABAN-MD
 
 *Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ ꜰᴏʀ ϙᴜᴇʀʏ* 💭
 https://t.me/GlobalBotInc
-https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07
+https://whatsapp.com/channel/0029VazjYjoDDmFZTZ9Ech3O
 
 
 *Yᴏᴜ-ᴛᴜʙᴇ ᴛᴜᴛᴏʀɪᴀʟꜱ* 🪄 
-https://youtube.com/GlobalTechInfo
+https://youtube.com/@mrshaban3788?si=GYPwbIg4mxUdtsou
 
-*ULTRA-MD--WHATTSAPP-BOT* 🥀
+*SHABAN-MD--WHATTSAPP-BOT* 🥀
 `;
 
 const { upload } = require('./mega');
@@ -125,10 +125,10 @@ router.get('/', async (req, res) => {
             });
 
         } catch (err) {
-            console.log("Error in SUHAIL function: ", err);
+            console.log("Error in SHABAN function: ", err);
             exec('pm2 restart qasim');
             console.log("Service restarted due to error");
-            SUHAIL();
+            SHABAN();
             await fs.emptyDirSync(__dirname + '/auth_info_baileys');
             if (!res.headersSent) {
                 await res.send({ code: "Try After Few Minutes" });
@@ -136,7 +136,7 @@ router.get('/', async (req, res) => {
         }
     }
 
-    await SUHAIL();
+    await SHABAN();
 });
 
 module.exports = router;
